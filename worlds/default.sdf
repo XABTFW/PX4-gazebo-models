@@ -9,6 +9,12 @@
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type="adiabatic"/>
+    <!-- Independent lower-body cradle; never attached to the aircraft. -->
+    <include>
+      <uri>model://fpv_half_body_cradle</uri>
+      <name>fpv_half_body_cradle</name>
+      <pose>0 0 0 0 0 -1.5707963267948966</pose>
+    </include>
     <scene>
       <grid>false</grid>
       <ambient>0.4 0.4 0.4 1</ambient>

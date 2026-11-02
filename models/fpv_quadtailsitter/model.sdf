@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<sdf version="1.10">
+  <model name="fpv_quadtailsitter">
+    <include merge="true">
+      <uri>model://fpv_quadtailsitter/base.sdf</uri>
+    </include>
+    <include merge="true">
+      <uri>model://airspeed</uri>
+      <pose>0 0 0.7 0 -1.57 0</pose>
+    </include>
+    <joint name="airspeed_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>airspeed_link</child>
+      <pose relative_to="base_link">0 0 0 0 0 0</pose>
+    </joint>
+  </model>
+</sdf>
